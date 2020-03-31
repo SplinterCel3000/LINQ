@@ -26,7 +26,7 @@ namespace LINQ_Lab
         {
             try
             {
-                String nyData = File.ReadAllText("C:/Users/bjohn/source/repos/LabLINQ/LINQ Lab/LINQ Lab/data.json");
+                String nyData = File.ReadAllText("../../../data.json");
                 RootObject thing = JsonConvert.DeserializeObject<RootObject>(nyData);
 
                 All(thing);
